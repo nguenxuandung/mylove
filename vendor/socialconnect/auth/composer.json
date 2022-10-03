@@ -1,0 +1,54 @@
+{
+    "name": "socialconnect/auth",
+    "description": "Social Connect Auth Component",
+    "keywords": [
+        "socialconnect",
+        "login",
+        "auth",
+        "oauth",
+        "facebook",
+        "google",
+        "twitter",
+        "slack",
+        "twitch",
+        "bitbucket",
+        "amazon",
+        "github",
+        "vk",
+        "gitlab"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Patsura",
+            "email": "talk@dmtry.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "ext-json": "*",
+        "socialconnect/common": "^1.1",
+        "paragonie/random_compat": "^2.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "~3.0.1",
+        "phpunit/phpunit": "~4.8.34"
+    },
+    "autoload": {
+        "psr-4": {
+            "SocialConnect\\": "src/"
+        }
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "Test\\" : "tests/Test/"
+        }
+    },
+    "replace": {
+        "socialconnect/oauth1": "self.version",
+        "socialconnect/oauth2": "self.version",
+        "socialconnect/openid": "self.version",
+        "socialconnect/openid-connect": "self.version",
+        "socialconnect/provider": "self.version"
+    }
+}

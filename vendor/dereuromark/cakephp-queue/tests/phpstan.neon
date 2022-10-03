@@ -1,0 +1,9 @@
+parameters:
+	autoload_files:
+		- bootstrap.php
+	checkMissingIterableValueType: false
+	checkGenericClassInNonGenericObjectType: false
+	ignoreErrors:
+		- '#Access to an undefined property Cake\\ORM\\BehaviorRegistry::\$Search#'
+		- '#Dead catch - Exception is already caught by Throwable above.#'
+		- '#Result of method .+QueueTaskInterface::run\(\) \(void\) is used.#'

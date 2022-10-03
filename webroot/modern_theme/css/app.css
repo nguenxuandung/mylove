@@ -1,0 +1,109 @@
+/* Frame page */
+body.frame {
+    overflow: hidden;
+    padding-top: 0;
+}
+
+body.frame .banner {
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    body.frame .counter {
+        padding-top: 8px;
+    }
+}
+
+.advertising-rates table th[rowspan='2'],
+.advertising-rates table th[colspan='3'],
+.payout-rates table th[rowspan='2'],
+.payout-rates table th[colspan='2'] {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.display-counter {
+    font-size: 70px;
+    display: block;
+    color: #336799;
+}
+
+/** Banner Ads **/
+
+.countdown {
+    border: 2px solid #888;
+    border-radius: 50%;
+    color: #888;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    height: 100px;
+    line-height: 18px;
+    margin: 25px auto;
+    padding: 29px 0 0;
+    width: 100px;
+}
+
+.countdown .timer {
+    font-size: 25px;
+}
+
+.banner {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.banner .banner-inner {
+    margin: 0 auto;
+}
+
+.banner-captcha .banner-inner {
+    max-width: 728px;
+}
+
+.banner-member .banner-inner {
+    max-width: 728px;
+}
+
+.banner-728x90 .banner-inner {
+    max-width: 728px;
+}
+
+.banner-468x60 .banner-inner {
+    max-width: 468px;
+}
+
+.banner-336x280 .banner-inner {
+    max-width: 336px;
+}
+
+#cookie-pop {
+    position: sticky;
+    bottom: 0;
+    z-index: 10000;
+    width: 100%;
+    background-color: #1875a9;
+}
+.cookie-message {
+    color: #ffffff;
+}
+.cookie-message a {
+    color: #ffffff;
+}
+.cookie-confirm {
+    text-align: right;
+}
+@media (min-width: 768px) {
+    .cookie-message {
+        padding: 20px 0;
+    }
+    .cookie-confirm {
+        padding-top: 15px;
+    }
+}
+@media (max-width: 767px) {
+    #cookie-pop {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "name": "socialconnect/openid-connect",
+    "description": "Implementation of OpenId (v1.1 - v2) client specification",
+    "type": "library",
+    "require": {
+        "php": ">=5.5",
+        "socialconnect/provider": "^1.4.0",
+        "socialconnect/oauth2": "^1.4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Patsura",
+            "email": "talk@dmtry.me"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "SocialConnect\\OpenIDConnect\\": ""
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.ms-sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.ms-sprite-f1 {
+    width: 57px;
+    height: 55px;
+    background-position: -5px -5px;
+}
+
+.ms-sprite-f2 {
+    width: 52px;
+    height: 57px;
+    background-position: -5px -70px;
+}
+
+.ms-sprite-f3 {
+    width: 66px;
+    height: 57px;
+    background-position: -5px -137px;
+}
+
+.ms-sprite-f4 {
+    width: 57px;
+    height: 54px;
+    background-position: -5px -204px;
+}
+
+.ms-sprite-f5 {
+    width: 57px;
+    height: 57px;
+    background-position: -5px -268px;
+}
+
+.ms-sprite-f6 {
+    width: 55px;
+    height: 55px;
+    background-position: -5px -335px;
+}
+
+.ms-sprite-f7 {
+    width: 48px;
+    height: 55px;
+    background-position: -5px -400px;
+}
+
+.ms-sprite-f8 {
+    width: 70px;
+    height: 57px;
+    background-position: -5px -465px;
+}
+
+.ms-sprite-f9 {
+    width: 52px;
+    height: 55px;
+    background-position: -5px -532px;
+}
+
+.ms-sprite-step1 {
+    width: 147px;
+    height: 129px;
+    background-position: -5px -597px;
+}
+
+.ms-sprite-step2 {
+    width: 158px;
+    height: 128px;
+    background-position: -5px -736px;
+}
+
+.ms-sprite-step3 {
+    width: 112px;
+    height: 129px;
+    background-position: -5px -874px;
+}
+
+.ms-sprite-total-clicks {
+    width: 58px;
+    height: 58px;
+    background-position: -5px -1013px;
+}
+
+.ms-sprite-total-links {
+    width: 58px;
+    height: 56px;
+    background-position: -5px -1081px;
+}
+
+.ms-sprite-total-users {
+    width: 48px;
+    height: 58px;
+    background-position: -5px -1147px;
+}

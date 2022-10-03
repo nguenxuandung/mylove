@@ -1,0 +1,201 @@
+<?php
+/**
+ * SocialConnect project
+ * @author: Patsura Dmitry https://github.com/ovr <talk@dmtry.me>
+ */
+
+return [
+    'redirectUri' => 'http://localhost:8000/auth/cb',
+    'provider' => [
+        'facebook' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => ['email'],
+            'fields' => ['email']
+        ],
+        'twitter' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'enabled' => false
+        ],
+        'google' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => [
+                'https://www.googleapis.com/auth/userinfo.email',
+                'https://www.googleapis.com/auth/userinfo.profile'
+            ]
+        ],
+        'paypal' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => [
+                'profile',
+                'email',
+                'address',
+                'phone',
+                'https://uri.paypal.com/services/paypalattributes'
+            ]
+        ],
+        'vk' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => ['email']
+        ],
+        'github' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => array('user', 'email'),
+            'options' => array(
+                /**
+                 * GitHub store only unverified and public email inside User
+                 * It's not possible to fetch user with email in one query with GraphQL (new API)
+                 * For now, there is only one way, additional request for it by user/email API entrypoint
+                 *
+                 * It's disabled by default in SocialConnect 1.x, but you can enable it from configuration :)
+                 */
+                'fetch_emails' => true
+            )
+        ],
+        'instagram' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+        ],
+        'slack' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => [
+                'identity.basic',
+                'identity.email',
+                'identity.team',
+                'identity.avatar',
+            ]
+        ],
+        'twitch' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => ['user_read']
+        ],
+        'px500' => [
+            'applicationId' => '',
+            'applicationSecret' => ''
+        ],
+        'bitbucket' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => ['account']
+        ],
+        'amazon' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => ['profile']
+        ],
+        'gitlab' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => ['read_user']
+        ],
+        'vimeo' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => []
+        ],
+        'digital-ocean' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => []
+        ],
+        'yandex' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => []
+        ],
+        //http://api.mail.ru/sites/my/add
+        'mail-ru' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => []
+        ],
+        //http://api.mail.ru/sites/my/add
+        'odnoklassniki' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'applicationPublic' => '',
+            'scope' => [
+                'GET_EMAIL'
+            ]
+        ],
+        'steam' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => []
+        ],
+        'tumblr' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => []
+        ],
+        'pixelpin' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => [
+                'email'
+            ]
+        ],
+        // https://discordapp.com/developers/applications/me
+        'discord' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => [
+                'identify',
+                'email'
+            ]
+        ],
+        // https://apps.dev.microsoft.com/portal/register-app
+        'microsoft' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => [
+                'wl.basic',
+                'wl.birthday',
+                'wl.emails'
+            ]
+        ],
+        'smashcast' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => []
+        ],
+        'steein' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => [
+                'users',
+                'email'
+            ]
+        ],
+        // https://www.reddit.com/prefs/apps/
+        'reddit' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => [
+                'identity'
+            ]
+        ],
+        // https://www.linkedin.com/developer/apps
+        'linkedin'  => [
+            'applicationId'     => '',
+            'applicationSecret' => '',
+        ],
+        // https://developer.yahoo.com/apps/create/
+        'yahoo'  => [
+            'applicationId'     => '',
+            'applicationSecret' => '',
+        ],
+        // https://developer.wordpress.com/apps/
+        'wordpress'  => [
+            'applicationId'     => '',
+            'applicationSecret' => '',
+        ],
+    ]
+];
